@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confess & Menfess esemkaga</title>
+    <link rel="stylesheet" href="style.css"/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Atur latar belakang dan warna dasar halaman */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  height: 100vh;
+}
+
+/* Kontainer utama untuk halaman */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+/* Gaya untuk bagian header */
+header {
+  margin-bottom: 20px;
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+/* Desain formulir */
+.form-container {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Formulir itu sendiri */
+.confes-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.confes-form label {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.confes-form input,
+.confes-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Tombol kirim */
+button {
+  background-color: #6a11cb;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2575fc;
+}>
+</head>
+<body>
+    <div class="container">
+        <h1>Confess & Menfess esemkaga</h1>
+        <p>Kirim pesan pesanmu di sini:</p>
+        
+        <form id="confessForm">
+            <textarea id="messageInput" placeholder="Tulis pesanmu..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <h2>Pesan Masuk</h2>
+        <div id="messagesContainer">
+            <p>Belum ada pesan.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
